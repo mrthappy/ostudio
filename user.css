@@ -1,0 +1,77 @@
+
+
+img{
+	max-width:100%;
+	display:block;
+}
+li{
+	list-style:none;
+	
+	
+}
+.holder{display:inline-block;margin-right:20px;}
+.social_icons{
+	
+	text-align:center;
+	border-top:1px solid grey;
+	border-bottom:1px solid grey;
+	margin-bottom:2em;
+	margin-top:2em;
+	padding:10px;
+}
+.flow{
+	font-size:.4.6em;
+}
+.fa-facebook-square{
+	color: #3b5998;
+	https://www.youtube.com/watch?v=0JUN9aDxVmI
+}
+#author_info{
+	
+	display:-webkit-box;
+	
+	display:-ms-flexbox;
+	
+	display:flex;
+}
+
+.twitter{
+	color:#4099FF;
+}
+.comments{color:black;cursor:pointer;}
+.articles{
+	
+}
+.page2{
+	font-size:.6em;
+}
+.page3{
+	font-size:.55em;
+}
+.page4{font-size:.5em;color:black;margin-left:10px;}
+/* Media queries begin here */
+
+@media screen and (min-width:700px){
+	.wrapper{
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+ 
+		
+	}
+    .wrapper > img{
+        flex:75%;
+    }
+	
+	.social_icons{
+
+border-top:0px ;
+border-bottom:0px;
+	
+}
+
+}
+
+@media screen and (min-width:1200px){
+.articles{display:flex;flex-direction:column;min-height:467px;background-size:cover;}
+}

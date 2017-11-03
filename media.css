@@ -1,0 +1,238 @@
+@media screen and (max-width:700px){
+    .nav_menu{
+        display:none;
+    }
+    .modelling_contacts_listings{
+      margin-top:5em;
+	  margin-bottom:10em;
+	  
+
+    }
+    .modelling_contacts_listings li{
+        flex:1 100%;
+		margin-bottom:3em;
+      
+       
+    }
+	
+    .modelling_contacts_listings li:last-of-type{
+       margin-bottom:0px;
+    }
+    .modelling_contacts_listings ul{
+        width:100%;
+		flex-wrap:wrap;
+		flex-direction:column;
+		
+	
+    
+    }
+}
+
+
+
+@media screen and (max-width:900px){
+    #text_message{
+             width:600px;
+             height:600px;
+            display:-webkit-box;
+            display:-ms-flexbox;
+            display:flex;  
+    }
+	
+    #banner_image{
+     
+        padding:40px;
+    }
+	
+}
+
+
+@media screen and (max-width:650px){
+    #text_message{
+             width:500px;
+             height:500px;
+            display:-webkit-box;
+            display:-ms-flexbox;
+            display:flex;
+          padding:50px 50px;
+         border:2px solid yellow;
+          
+        
+        
+    }
+    #text_message p{
+    font-size:1em;
+    width:100%;
+    line-height:140%;
+    letter-spacing:.2em;
+}
+    #banner_image{
+     
+        padding:40px;
+    }
+}
+@media screen and (max-width:480px){
+    #text_message{
+             width:400px;
+             height:400px;
+            display:-webkit-box;
+            display:-ms-flexbox;
+            display:flex;
+          padding:50px 50px;
+         border:2px solid yellow;
+        overflow:inherit;
+          
+        
+        
+    }
+	
+    #text_message p{
+    font-size:1.3em;
+    width:100%;
+    line-height:140%;
+    letter-spacing:.2em;
+}
+    #banner_image{
+     
+        padding:40px;
+    }
+     .modelling_contacts_listings ul{
+        width:100%;
+    
+    }
+}
+
+
+@media screen and (min-width:60em){
+	 #models_container{
+		 padding:0;
+        max-width:100%;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack:center;
+        -ms-flex-pack:center;
+        justify-content:center;
+		
+	
+        
+       
+    }
+	#project{
+        padding:20px;
+        height:auto;
+		
+    }
+	#models_container section{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	
+	-webkit-box-align:center;
+	
+	-ms-flex-align:center;
+	
+	align-items:center;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	max-width:1200px;
+	padding:20px;
+	
+}
+.count{
+	width:20%;
+}
+
+}
+
+@media screen and (min-width:40em){
+	 #models_container  section{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+		-ms-flex-wrap:wrap;
+		flex-wrap:wrap;
+		padding:20px;
+       
+    }
+    .count{
+        
+    }
+}
+
+@media screen and (min-width:60em){
+    #figures_wrapper{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+       figure.teams{
+  padding:0;
+ 
+  
+}
+}
+@media screen and (min-width:40em){
+      #figures_wrapper{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+   
+ 
+    figure.teams img{
+    border-radius:50%;
+    height:300px;
+    width:300px;
+}
+}
+
+@media screen and (max-width:480px){
+    #Team_images{
+    max-width:100%
+  
+    
+}
+    figure.teams{
+        width:100%;
+    }
+    #Team_goal h1 {
+    font-family:'lato','san-serif';
+    font-size:5.3vw;
+    text-align:center;
+    font-weight:400;
+    width:100%;
+    margin:0px auto;
+    padding-top:20px;
+   
+}
+#Team_goal h1:after{
+    display:block;
+    width:50%;
+    height:2px;
+    content:'';
+    clear:both;
+    background:orange;
+    margin:3px auto 0  auto;
+}
+#Team_goal p{
+     font-family:'lato','san-serif';
+    font-size:3.5vw;
+    text-align:center;
+    font-weight:100;
+    width:100%;
+    
+    line-height:200%;
+    margin:0 auto;
+ 
+}
+}

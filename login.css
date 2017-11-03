@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding=0;
+    -webkit- box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    
+}
+
+body{
+
+    font-family:lato,'san-serif';
+    line-height:140%;
+    font-size:67.5%;
+}
+.links{
+    color:crimson;
+    font-size:1.7em;
+    display:block;
+    margin-bottom:1.2em;
+    padding:20px;
+}
+
+#headers_login h1{
+    margin-bottom:20px;
+    text-align:center;
+}
+#headers_login{
+    color:black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    width:100%;
+    margin:0 auto;
+    
+}
+#admin_form{
+    width:500px;
+    margin:0 auto;
+}
+#admin_form input[type=text]{
+    display:block;
+    outline:none;
+    border:0;
+    margin-bottom:1em;
+    padding:20px 20px;
+    width:100%;
+    border-radius:5px;
+    background:#ebebeb;
+}
+ #password{
+    display:block;
+    outline:none;
+    border:0;
+    margin-bottom:1em;
+    padding:20px 20px;
+    width:100%;
+    border-radius:5px;
+    background:#ebebeb;
+}
+#directions_link{
+    width:100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form_span{
+    display:block;
+    color:black;
+    font-size:1.7em;
+}
+.firstspan{
+    text-decoration:none;
+}
+.firstspan:hover,.form_span:hover{
+    color:green;
+
+    
+}
+input[type=submit]{
+     display:block;
+    outline:none;
+    border:0;
+    margin-bottom:1em;
+    padding:20px 20px;
+    width:100%;
+    border-radius:5px;
+    background:black;
+    color:white;
+    font-size:2em;
+    border:6px solid white;
+    -webkit-transition:background .3s ease-in;
+    transition:background .3s ease-in;
+    cursor:pointer;
+}
+input[type=submit]:hover{
+    background:lightgreen;
+}
+@media screen and (max-width:500px){
+    #admin_form{
+        width:80%;
+       
+        
+    }
+    .firstspan{
+        float:none;
+        width:100%;
+        padding:0;
+    }
+    #admin_form input{
+    
+    margin-bottom:1em;
+    
+        
+    
+    
+}
+    
+    input[type=submit]:hover{
+   width:100%;
+}
+    #directions_link{
+        text-align:center;
+    }
+}

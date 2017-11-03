@@ -1,0 +1,149 @@
+<DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.4/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.6.4/angular-route.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.10/p5.js"></script>
+
+
+<style>
+p{
+margin-bottom:2em;
+ 
+}
+#center{
+     max-width:700px;
+ height:500px;
+ margin:0 auto;
+}
+ 
+</style>
+ 
+</head>
+	
+
+    
+
+<body>
+    
+     <a href="#/">Home</a>
+    <a href="#/second">second </a>
+    <a href="#/main">main</a>
+    <a href="#/third">third</a>
+	
+
+ 
+  	<div ng-view>
+	
+	
+	</div>
+    
+    <script>
+	window.addEventListener("hashchange",function (){
+    if(window.location.hash==="#/thrid"){
+        console.log("that is it");
+    }
+});
+
+	 var myApp=angular.module("myApp",["ngRoute"]);
+	 
+  myApp.controller("mainCtrl",function ($scope){
+    $scope.name="jdjdjdj";
+    $scope.address="no i isfdhfdfdsh ";
+            
+          
+        });
+		myApp.controller("thirdCtr",["$scope","$routeParams","myService",function ($scope,$routeParams,myService){
+            $scope.val=$routeParams.val;
+            console.log(myService);
+        
+        
+        
+    }]);
+
+  myApp.service("myService",function (){
+      var self=this;
+      this.name="prine" + "eudes";
+      this.namelength=function (){
+          return self.name.length;
+          
+      }
+  });
+        
+        myApp.directive("search",function (){
+            return {
+                templateUrl:'searchresult.html',
+                replace:true,
+                scope:{
+                      address:"@"
+                }
+            }
+        });
+
+	   myApp.config(["$routeProvider", "$locationProvider",function ($routeProvider,$locationProvider) {
+	       $locationProvider.hashPrefix("");
+           $routeProvider.
+           when("/",{
+                templateUrl:"home.html",
+                controller:"mainCtrl"
+               
+               
+           }).
+              
+        when ('/second',{
+               
+                templateUrl:"second.html",
+                controller:"mainCtrl"
+               
+               }).
+        
+        when('/main',{
+              templateUrl:"main.html",
+              controller:"mainCtrl"
+        }).
+           when ('/third/:val',{
+               templateUrl:"third.html",
+               controller:"thirdCtr"
+           })
+		
+       }]);
+        var circleX=0;
+        var sized=0;
+        
+     function setup() {
+  createCanvas(600,400);
+  
+}
+
+function draw(){
+        
+     
+    
+    // https://www.youtube.com/watch?v=1Osb_iGDdjk&index=11&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA
+    background(250,250,100);
+
+    fill(250,200,200);
+    ellipse(circleX,sized,80,80);
+    circleX+=1;
+    if(circleX===600){
+        sized=200;
+        circleX=200;
+        
+    }
+ 
+}
+function mousePressed(){
+    background(244,200,34);
+}
+       
+    </script>
+    
+</body>
+</html>
