@@ -27,9 +27,9 @@ img:hover{
 }
 a
 {
-	
+
 	display:block;
-	
+
 	}
 	li{list-style:none;}
 body{
@@ -38,10 +38,10 @@ body{
 	line-height:140%;
     height:100vh;
 	  width:100%;
-	
-	
 
-	
+
+
+
 }
 
 /* page loader */
@@ -62,7 +62,7 @@ body{
 	font-size:30px;
 }
 #loader_img{
-	background-image:url(../images/logo.png);
+	background-image:url(/logo.png);
 	width:100px;
 	height:100px;
 	background-repeat:no-repeat;
@@ -77,14 +77,14 @@ body{
 
 
 #paragraph_wrapper{
-    position:absolute;   
+    position:absolute;
 	width:100%;
 	text-align:center;
 	top:50%;
 	left:50%;
 	-webkit-transform:translate(-50%,-50%);
 	transform:translate(-50%,-50%);
-	
+
 }
 .paragraph_loader {
 	color:orange;
@@ -96,10 +96,10 @@ body{
 	margin-top:0px;
 	-webkit-animation:bounce 3s ease-in;
 	animation:bounce 3s ease-in both;
-	
-	
 
-	
+
+
+
 }
 
 .paragraph_loader:last-of-type{
@@ -111,12 +111,12 @@ body{
 		-webkit-transform:translateY(100%);
 		transform:translateY(100%);
 	}
-	
+
 	25%{
 		-webkit-transform:translateY(70%);
 		transform:translateY(70%);
 	}
-	
+
 	75%{
 		-webkit-transform:translateY(45%);
 		transform:translateY(45%);
@@ -132,12 +132,12 @@ body{
 		-webkit-transform:translateY(100%);
 		transform:translateY(100%);
 	}
-	
+
 	25%{
 		-webkit-transform:translateY(70%);
 		transform:translateY(70%);
 	}
-	
+
 	75%{
 		-webkit-transform:translateY(45%);
 		transform:translateY(45%);
@@ -155,7 +155,7 @@ body{
 #logo_holder{
 	width:50px;
 	height:50px;
-	background-image:url(../images/logo.png);
+	background-image:url(logo.png);
 	background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -163,7 +163,7 @@ body{
 }
 
 #banner_image{
-	background-image:url(../images/beauty.jpg);
+	background-image:url(beauty.jpg);
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -194,7 +194,7 @@ body{
 	top:20px;
 	font-size:1.4em;
 	line-height:160%;
-	
+
 }
 .controll{
     visibility:hidden;
@@ -220,7 +220,7 @@ body{
 #toggle_wrapper{
 	width:40px;
 	height:100%;
-	
+
 	top:0px;
   right:20px;
 	position:absolute;
@@ -237,8 +237,8 @@ body{
 	position:relative;
 	-webkit-transition:all .3s ease-in;
 	transition:all .3s ease-in;
-	
-	
+
+
 }
 .span_toggle:before{
 	top:15px;
@@ -257,7 +257,7 @@ body{
 	-webkit-transform:rotate(-45deg);
 	transform:rotate(-45deg);
 
-	
+
 	bottom:0;
 }
 #toggle_wrapper:hover .span_toggle{
@@ -274,8 +274,8 @@ min-height:100%;
     z-index:20;
     top:60px;
     width:100vw;
-   
-	
+
+
 }
 .nav_mobile{
     background:#34495e;
@@ -292,13 +292,13 @@ min-height:100%;
 	 height:1.4px;
 	 clear:both;;
 }
-	
+
 #text_message{
     width:800px;
     height:800px;
     color:white;
     border-radius:50%;
-   
+
     position:absolute;
     top:50%;
     left:50%;
@@ -318,7 +318,7 @@ min-height:100%;
     -ms-flex-align:center;
     align-items:center;
     border:.7px solid #fff;
-    
+
 }
 
 #text_button{
@@ -353,8 +353,8 @@ min-height:100%;
 .model_heading h1{
 	font-size:3em;
 	line-height:200%;
-	
-	
+
+
 }
 
 .model_heading{
@@ -368,8 +368,8 @@ min-height:100%;
 	-webkit-transition:all ease-in-out .3s;
 	transition:all ease-in-out .3s;
 	padding:20px;
-	
-	
+
+
 }
 .main{
 	color:red;
@@ -389,15 +389,15 @@ min-height:100%;
 	width:0%;
 	background:black;
 	color:white;
-	
-	
+
+
 }
 .modelling_contacts_listings{
     height:100%;
     width:100%;
 
     background:#ffffff;
-    
+
     text-align:center;
     display:-webkit-box;
     display:-ms-flexbox;
@@ -408,12 +408,12 @@ min-height:100%;
     -webkit-box-align:center;
     -ms-flex-align:center;
     align-items:center;
-   
-   
+
+
 }
 .modelling_contacts_listings ul{
     width:70%;
-  
+
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -423,37 +423,37 @@ min-height:100%;
     -webkit-box-align:center;
     -ms-flex-align:center;
     align-items:center;
-    
-   
-  
-   
+
+
+
+
 }
 .modelling_contacts_listings .ysl{
 
     width:150px;
     height:150px;
-  
-    background-image:url(../images/ysl.png);
+
+    background-image:url(ysl.png);
     background-repeat:no-repeat;
      background-size:cover;
     background-position:center center;
-  
-    
-   
+
+
+
 }
 .modelling_contacts_listings .victoria{
 
     width:150px;
     height:150px;
-  
-    background-image:url(../images/victoriasecret.jpg);
+
+    background-image:url(victoriasecret.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center center;
-    
-  
-    
-   
+
+
+
+
 }
 
 #team{
@@ -467,7 +467,7 @@ min-height:100%;
     width:500px;
     margin:0px auto;
     padding-top:20px;
-   
+
 }
 #Team_goal h1:after{
     display:block;
@@ -493,7 +493,7 @@ min-height:100%;
 #Team_images{
     max-width:80%;
     margin:10px  auto 0 auto;
-    
+
 }
 
 
@@ -517,8 +517,8 @@ min-height:100%;
 figure.teams{
     width:350px;
     text-align:center;
- 
-  
+
+
 }
 figure.teams img{
     border-radius:50%;
@@ -542,9 +542,9 @@ figure.teams img{
     position:absolute;
     z-index:0;
     display:none;
-   
-    
-    
+
+
+
 }
 .loader_gif{
     font-size:3em;
@@ -591,7 +591,7 @@ figure.teams img{
     -webkit-box-align:center;
     -ms-flex-align:center;
     align-items:center;
-    
+
 }
 #social_menus span{
     -webkit-box-flex:1;
@@ -599,7 +599,7 @@ figure.teams img{
     flex:1 100px;
     text-align:center;
     height:100px;
-    
+
     border-right:1px solid aqua;
     display:-webkit-box;
     display:-ms-flexbox;
@@ -613,8 +613,8 @@ figure.teams img{
     -webkit-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out;
     cursor:pointer;
-   
-    
+
+
 }
 #form_wrapper{
      margin:0 auto;
@@ -627,7 +627,7 @@ figure.teams img{
 }
 #social_menus span .fa{
     font-size:3em;
-    
+
 }
 #contact_form{
     width:600px;
@@ -639,7 +639,7 @@ figure.teams img{
 
 #two_rows{
     width:100%;
-  
+
 }
 #two_rows >*{
     float:left;
@@ -650,8 +650,8 @@ figure.teams img{
 .input{
     border:1px solid #DCDCE0;
     outline:none;
-    
-   
+
+
 }
 input[type=email]{
     width:100%;
@@ -662,13 +662,13 @@ textarea{
     height:200px;
     margin-bottom:0;
     PADDING:20PX;
-       
+
 }
 #submit{
     width:100%;
     height:40px;
- 
-    
+
+
 }
 #submit_btn{
     outline:none;
@@ -704,7 +704,7 @@ textarea{
 .contact_errors{
     color:darkred;
     font-size:1.3em;
-   
+
 }
 
 
